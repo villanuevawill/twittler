@@ -1,0 +1,136 @@
+body{
+	margin:0;
+}
+#top{
+height:50px;
+margin:0;
+display:block;
+background-color:white;
+}
+#twitcontain{
+	display:inline;
+	position:absolute;
+	left:70%;
+	top:4px;
+
+
+}
+#twitcontain div{
+	display: inline;
+	position:relative;
+	font-family: 'Ubuntu', sans-serif;
+
+}
+#twitcontain div a{
+	text-decoration:none;
+	color:black;
+}
+
+#twitcontain div a:hover{
+	color:rgb(77,130,181);
+}
+
+#twitcontain img{
+	position:relative;
+	display:inline;
+	top:5px;
+	margin:0;
+
+}
+#header{
+	background-color:rgb(77,130,181);
+	height: 230px;
+	margin-top:-15px;
+	margin:0 auto;
+}
+#homeicon{
+	position:absolute;
+	left:20%;
+	top:5px;
+}
+#header img{
+	border:solid;
+	border-color:white;
+	border-radius:20px;
+	position:relative;
+	top:20px;
+	left:110px;
+	margin-bottom:25px;
+
+}
+
+#user{
+	margin-left:109px;
+	margin-top:5px;
+	color:white;
+	font-family: 'Poiret One', cursive;
+	
+}
+a {
+	text-decoration:none;
+}
+
+#center{
+	color:white;
+	font-size:30px;
+	background-color:rgb(61,95,167);
+	padding: 10px 20px;
+	border:solid;
+	cursor:pointer;
+	width:135px;
+	margin:0 auto;
+	position:relative;
+	top:85px;
+
+
+
+
+}
+#center:hover{
+	background-color:black;
+}
+.tweets {
+	background-color:rgb(187,191,192);
+	margin-top:10px;
+}
+body {
+	background-color:rgb(187,191,192);
+}
+.tweets div{
+
+	background-color:white;
+	width:350px;
+	margin: 0 auto;
+	padding: 10px 20px;
+	border-style:solid;
+	border-color:rgb(88,88,88);
+	border-width:1px;
+	border-radius:12px;
+	box-shadow: 2px 2px 2px black;
+	margin-bottom:0px;
+	cursor:pointer;
+
+}
+.tweets div:hover{
+	background-color: rgba(77,130,181,.2);
+}
+.tweets h1, h2 {
+	display:inline;
+}
+.tweets h1 {
+	font-size:19px;
+	margin-right:5px;
+}
+.tweets h2 {
+	font-size:13px;
+	color:rgb(86,86,86);
+}
+
+#crunch {
+
+	width:350px;
+	margin: 0 auto;
+	display:none;
+
+}
+

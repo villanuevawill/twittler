@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One|Ubuntu' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <script src="underscore-min.js"></script>
+    <script src="main.js"></script>
+
   </head>
+
   <body>
-    <script>
+  <div id="top"> 
+  <a href=#><img src="Homeicon.png" id="homeicon"></img></a>
+  <div id="twitcontain">
+  <div><a href=#>Twittler</a></div>
+  <a href=#>
+  <img src="twittler.png" alt="twittler logo"></a>
+  </div>
+  </div>
+  <div id="header">
+    <div id="crunch">
+    <img src="dougcalhoun.jpg"></img>
+    <div id="user">. . . Just Dougin' it</div>
+    <div id="user">@douglascalhoun</div>
+    </div>
+    <p id="center">Tweets . . .</p>
+    
+  </div>
+  <div class="tweets">
+</div>
+  
 
-      $(document).ready(function(){
-        var $body = $('body');
-        $body.html('');
-
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
-
-      });
-
-    </script>
-  </body>
+</body>
 </html>
