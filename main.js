@@ -5,6 +5,7 @@
 
       $(document).ready(function(){
         var $tweets = $('.tweets');
+        var data ={'shawndrost':'Just Shawnin\' it','sharksforcheap':'Just Sharkin\' it','mracus':'Just Mracin\' it','douglascalhoun':'Just Dougin\' it'};
         var showtweets = function(evt){
         $tweets.children('div').remove();
         var index = streams.home.length - 1;
@@ -30,11 +31,17 @@
         evt.preventDefault();
         $('.tweets div').click(displayUser)
       };
-             
+     
         $('#center').click(showtweets);
         $('.tweets div').click(displayUser)
 
         function displayUser() {
+          $('#crunch').html('');
+          var user=($(this).find('h1').text());
+          $('#crunch').append('<img src='+user+'.jpg>')
+          $('#crunch').append('<div id=user>. . . '+data[user]+'</div>')
+          $('#crunch').append('<div id=user>@'+user+'</div>')
+
           $('#crunch').show();
           $('#header').css('height','380px')
           $('#center').css('top','30px')
