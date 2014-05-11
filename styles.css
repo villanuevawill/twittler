@@ -65,6 +65,7 @@ background-color:white;
 	margin-top:5px;
 	color:white;
 	font-family: 'Poiret One', cursive;
+	cursor:pointer;
 	
 }
 a {
@@ -133,5 +134,8 @@ body {
 	margin: 0 auto;
 	display:none;
 
+}
+#crunch img {
+	cursor:pointer;
 }
 

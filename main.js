@@ -30,6 +30,8 @@
 
         }
         $('.tweets div').click(displayUser)
+        $('#user').click(function (evt) {evt.preventDefault(); showusertweets(userstream);});
+        $('#crunch img').click(function (evt) {evt.preventDefault(); showusertweets(userstream);});
         $(window).scrollTop(0)
         if (typeof user === 'string') {
           userstream=streams.users[user];
@@ -80,7 +82,6 @@
         $('.tweets div').click(displayUser)
         $('#homeicon').click(homestream);
         $('#twitcontain').click(homestream);
-
 
 
         function displayUser() {
