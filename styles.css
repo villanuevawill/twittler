@@ -1,17 +1,17 @@
 body{
-	margin:0;
+  margin:0;
 }
 #top{
-height:50px;
-margin:0;
-display:block;
-background-color:white;
+  height:50px;
+  margin:0;
+  display:block;
+  background-color:white;
 }
 #twitcontain{
-	display:inline;
-	position:absolute;
-	left:70%;
-	top:4px;
+  display:inline;
+  position:absolute;
+  left:70%;
+  top:4px;
 
 
 }
@@ -56,7 +56,6 @@ background-color:white;
 	top:20px;
 	left:110px;
 	margin-bottom:25px;
-
 }
 
 #user{
@@ -68,7 +67,8 @@ background-color:white;
 	cursor:pointer;
 	
 }
-a {
+
+a{
 	text-decoration:none;
 }
 
@@ -83,10 +83,6 @@ a {
 	margin:0 auto;
 	position:relative;
 	top:45px;
-
-
-
-
 }
 #center:hover{
 	background-color:black;
@@ -99,7 +95,6 @@ body {
 	background-color:rgb(187,191,192);
 }
 .tweets div{
-
 	background-color:white;
 	width:350px;
 	margin: 0 auto;
@@ -111,7 +106,6 @@ body {
 	box-shadow: 2px 2px 2px black;
 	margin-bottom:0px;
 	cursor:pointer;
-
 }
 .tweets div:hover{
 	background-color: rgba(77,130,181,.2);
@@ -127,36 +121,26 @@ body {
 	font-size:13px;
 	color:rgb(86,86,86);
 }
-
 #crunch {
-
 	width:350px;
 	margin: 0 auto;
 	display:none;
-
 }
 #crunch img {
 	cursor:pointer;
 }
 #texttweet {
-
 	width:140px;
 	display:inline;
 	margin:0;
 	resize:none;
 	padding: 5px 0px;
-
-
-
 }
 #tweeter {
 	margin:0 auto;
 	position:relative;
 	width:145px;
 	top: 75px;
-
-
-
 }
 #send {
 position: relative;
