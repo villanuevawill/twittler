@@ -28,16 +28,27 @@
           $tweet.appendTo($tweets);
           index -= 1;
 
-        }
+        };
         $('.tweets div').click(displayUser)
         $('#user').click(function (evt) {evt.preventDefault(); showusertweets(userstream);});
         $('#crunch img').click(function (evt) {evt.preventDefault(); showusertweets(userstream);});
+
         $(window).scrollTop(0)
         if (typeof user === 'string') {
           userstream=streams.users[user];
         }
 
       };
+
+
+         $('#texttweet').focus(function (){
+          $('#texttweet').attr('rows',3);
+          $('#box').show();});
+         $('#texttweet').blur(function(){
+          setTimeout(function(){$('#texttweet').attr('rows',1);
+            $('#box').hide(); $('#textweet').val('')},200);});
+          
+         
 
 
 
@@ -71,7 +82,8 @@
         var homestream = function (evt) {
           $('#crunch').hide();
           $('#header').css('height','230px');
-          $('#center').css('top','85px');
+          $('#center').css('top','45px');
+          $('#texttweet').show();
           userstream=streams.home;
           showusertweets(userstream);
           evt.preventDefault();
@@ -87,17 +99,26 @@
         function displayUser() {
           $('#crunch').html('');
           var user=($(this).find('h1').text());
-          $('#crunch').append('<img src='+user+'.jpg>')
+          $('#crunch').append('<img src='+user+'.jpg id="portrait">')
           $('#crunch').append('<div id=user>. . . '+data[user]+'</div>')
           $('#crunch').append('<div id=user>@'+user+'</div>')
-          $('#crunch').show();
           $('#header').css('height','380px');
           $('#center').css('top','30px');
+          $('#texttweet').hide();
+          $('#crunch').show();
           userstream=streams.users[user];
           showusertweets(userstream,user);
 
         }
 
+        $('#send').click(function(){
+         var message=$('#texttweet').val();
+         var time=new Date();
+         var user='Me';
+         newTweet={created_at:time,message:message,user:user};
+         streams.home.push(newTweet);
+         showusertweets(userstream);
+        });
 
       });
 
